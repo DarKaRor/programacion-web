@@ -6,8 +6,6 @@ $lado_a = 3;
 $lado_b = 4;
 $unidad = "cm";
 $hipotenusa = calcular_hipotenusa($lado_a,$lado_b);
-
-
 ?>
 
 <!DOCTYPE html>
@@ -23,16 +21,16 @@ $hipotenusa = calcular_hipotenusa($lado_a,$lado_b);
         <h2>Johandry López - 29714201</h2>
     </header>
     <div class="data">
-        <p>Lado a: <?php echo $lado_a?></p>
+        <p>Lado a: <?php echo $lado_a." ".$unidad?></p>
         <div class="separator"></div>
-        <p>Lado b: <?php echo $lado_b?></p>
+        <p>Lado b: <?php echo $lado_b." ".$unidad?></p>
         <div class="separator"></div>
-        <p>Valor de la hipotenusa: <?php echo $hipotenusa?></p>
+        <p>Valor de la hipotenusa: <?php echo $hipotenusa." ".$unidad?></p>
         <div class="separator"></div>
     </div>
     <nav class="activities row center">
         <a href="../index.html">Regresar</a>
-        <a href="./php/triangulo.php">GitHub</a>
+        <a href="https://github.com/DarKaRor/programacion-web/blob/master/web/php/triangulo.php">GitHub</a>
      </nav>
 </head>
 <body>
