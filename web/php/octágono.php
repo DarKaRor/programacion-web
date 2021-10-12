@@ -17,7 +17,7 @@ $unidad = "cm";
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $lado = $_POST['lado'];
     #$area = format_float_two(calcular_area($lado));
-    $area = number_format((float)$area, 2, '.', '');
+    $area = number_format((float)$lado, 2, '.', '');
 }
 
 ?>
