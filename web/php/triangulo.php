@@ -16,6 +16,8 @@ $hipotenusa = calcular_hipotenusa($lado_a,$lado_b);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Cálculo de Hipotenusa</title>
+</head>
+<body>
     <header>
         <h1>Cálculo de hipotenusa</h1>
         <h2>Johandry López - 29714201</h2>
@@ -32,6 +34,5 @@ $hipotenusa = calcular_hipotenusa($lado_a,$lado_b);
         <a href="../index.html">Regresar</a>
         <a href="https://github.com/DarKaRor/programacion-web/blob/master/web/php/triangulo.php">GitHub</a>
     </nav>
-</head>
 <body>
 </html>

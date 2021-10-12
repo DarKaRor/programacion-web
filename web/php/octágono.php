@@ -9,9 +9,15 @@ function calcular_area($lado){
     return $area;
 }
 
-$lado = rand(1,100);
+$lado = rand(0,100);
 $area = format_float_two(calcular_area($lado));
 $unidad = "cm";
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+     $lado = $_POST['lado'];
+     $area = format_float_two(calcular_area($lado));
+    
+}
 
 ?>
 
@@ -23,11 +29,18 @@ $unidad = "cm";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Cálculo de Hipotenusa</title>
-    <header>
+</head>
+</body>
+<header>
         <h1>Cálculo de hipotenusa</h1>
         <h2>Johandry López - 29714201</h2>
     </header>
     <div class="data">
+        <form action="octágono.php" onsubmit="return false" method="post">
+            <p>Ingrese el valor del lado</p>
+            <input type="number" required name="lado" id="lado" min="1" value="<?php echo $lado ?>"/>
+            <input type="submit" name="submit" value="Aceptar"/>
+        </form>
         <p>Valor de los lados: <?php echo $lado." ".$unidad?></p>
         <div class="separator"></div>
         <p>Valor del área: <?php echo $area." ".$unidad."²"?></p>
@@ -35,8 +48,13 @@ $unidad = "cm";
     </div>
     <nav class="activities row center">
         <a href="../index.html">Regresar</a>
-        <a href="https://github.com/DarKaRor/programacion-web/blob/master/web/php/triangulo.php">GitHub</a>
+        <a href="https://github.com/DarKaRor/programacion-web/blob/master/web/php/octágono.php">GitHub</a>
     </nav>
-</head>
+<script>
+if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+    }
+</script>
 <body>
+
 </html>

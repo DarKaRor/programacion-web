@@ -85,6 +85,8 @@ if($sueldo) $empleado[$sKey] = $sueldo;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Registro de Empleados</title>
+</head>
+<body>
     <header>
         <h1>Registro de Empleados</h1>
         <h2>Johandry López - 29714201</h2>
@@ -103,6 +105,5 @@ if($sueldo) $empleado[$sKey] = $sueldo;
         <a href="../index.html">Regresar</a>
         <a href="https://github.com/DarKaRor/programacion-web/blob/master/web/php/triangulo.php">GitHub</a>
      </nav>
-</head>
 <body>
 </html>
