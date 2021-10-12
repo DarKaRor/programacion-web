@@ -1,6 +1,9 @@
 <?php
 
-#require __DIR__ . '\utils.php';
+// Retorna un número redondeado a dos puntos decimales.
+function format_float_two($n){
+    return number_format((float)$n, 2, '.', '');
+ }
 
 function calcular_area($lado){
     $perimetro = $lado*8;
@@ -10,14 +13,12 @@ function calcular_area($lado){
 }
 
 $lado = rand(0,100);
-#$area = format_float_two(calcular_area($lado));
-$area = number_format((float)$area, 2, '.', '');
+$area = format_float_two(calcular_area($lado));
 $unidad = "cm";
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $lado = $_POST['lado'];
-    #$area = format_float_two(calcular_area($lado));
-    $area = number_format((float)$lado, 2, '.', '');
+    $area = format_float_two(calcular_area($lado));
 }
 
 ?>
