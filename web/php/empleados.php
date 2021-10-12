@@ -1,9 +1,6 @@
 <?php
 
-// Retorna un número redondeado a dos puntos decimales.
-function format_float_two($n){
-    return number_format((float)$n, 2, '.', '');
- }
+require __DIR__ . '\utils.php';
 
 # Devuelve la cédula con separador de miles. Devuelve falso si es menor o igual a 0.
 function set_cedula($cedula){

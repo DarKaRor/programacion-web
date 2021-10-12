@@ -1,9 +1,6 @@
 <?php
 
-// Retorna un número redondeado a dos puntos decimales.
-function format_float_two($n){
-    return number_format((float)$n, 2, '.', '');
- }
+require __DIR__ . '\utils.php';
 
 function calcular_area($lado){
     $perimetro = $lado*8;
@@ -39,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         <h2>Johandry López - 29714201</h2>
     </header>
     <div class="data">
-        <form action="octágono.php" onsubmit="return false" method="post">
+        <form action="octágono.php" method="post">
             <p>Ingrese el valor del lado</p>
             <input type="number" required name="lado" id="lado" min="1" value="<?php echo $lado ?>"/>
             <input type="submit" name="submit" value="Aceptar"/>
@@ -53,11 +50,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         <a href="../index.html">Regresar</a>
         <a href="https://github.com/DarKaRor/programacion-web/blob/master/web/php/octágono.php">GitHub</a>
     </nav>
-<script>
-if ( window.history.replaceState ) {
-        window.history.replaceState( null, null, window.location.href );
-    }
-</script>
 <body>
 
 </html>
