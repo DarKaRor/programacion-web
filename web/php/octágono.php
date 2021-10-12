@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__ . '\utils.php';
+#require __DIR__ . '\utils.php';
 
 function calcular_area($lado){
     $perimetro = $lado*8;
@@ -10,13 +10,14 @@ function calcular_area($lado){
 }
 
 $lado = rand(0,100);
-$area = format_float_two(calcular_area($lado));
+#$area = format_float_two(calcular_area($lado));
+$area = number_format((float)$area, 2, '.', '');
 $unidad = "cm";
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-     $lado = $_POST['lado'];
-     $area = format_float_two(calcular_area($lado));
-    
+    $lado = $_POST['lado'];
+    #$area = format_float_two(calcular_area($lado));
+    $area = number_format((float)$area, 2, '.', '');
 }
 
 ?>
