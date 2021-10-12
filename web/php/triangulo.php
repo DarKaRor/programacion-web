@@ -31,7 +31,7 @@ $hipotenusa = calcular_hipotenusa($lado_a,$lado_b);
     <nav class="activities row center">
         <a href="../index.html">Regresar</a>
         <a href="https://github.com/DarKaRor/programacion-web/blob/master/web/php/triangulo.php">GitHub</a>
-     </nav>
+    </nav>
 </head>
 <body>
 </html>
