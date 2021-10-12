@@ -50,6 +50,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         <a href="../index.html">Regresar</a>
         <a href="https://github.com/DarKaRor/programacion-web/blob/master/web/php/octágono.php">GitHub</a>
     </nav>
-<body>
+</body>
 
 </html>

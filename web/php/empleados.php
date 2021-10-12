@@ -1,6 +1,6 @@
 <?php
 
-//require __DIR__ . '\utils.php';
+require __DIR__ . '\utils.php';
 
 # Devuelve la cédula con separador de miles. Devuelve falso si es menor o igual a 0.
 function set_cedula($cedula){
@@ -11,8 +11,8 @@ function set_cedula($cedula){
 # Devuelve el sueldo con dos puntos decimales. Devuelve falso si es menor igual a 0.
 function set_sueldo($sueldo){
     if($sueldo<=0) return false;
-    # return format_float_two($sueldo); 
-    return number_format((float)$sueldo, 2, '.', '');
+     return format_float_two($sueldo); 
+    #return number_format((float)$sueldo, 2, '.', '');
 }
 
 $empleados = [];
@@ -80,7 +80,7 @@ if($sueldo) $empleado[$sKey] = $sueldo;
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
@@ -105,5 +105,5 @@ if($sueldo) $empleado[$sKey] = $sueldo;
         <a href="../index.html">Regresar</a>
         <a href="https://github.com/DarKaRor/programacion-web/blob/master/web/php/triangulo.php">GitHub</a>
      </nav>
-<body>
+</body>
 </html>
