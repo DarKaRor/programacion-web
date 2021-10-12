@@ -1,6 +1,9 @@
 <?php
 
-require __DIR__ . '\utils.php';
+// Retorna un número redondeado a dos puntos decimales.
+function format_float_two($n){
+    return number_format((float)$n, 2, '.', '');
+ }
 
 function calcular_area($lado){
     $perimetro = $lado*8;
