@@ -2,7 +2,7 @@
 
 // Retorna un número redondeado a dos puntos decimales.
 function format_float_two($n){
-    return number_format((float)$n, 2, '.', '');
+    return number_format((float)$n, 2, ',', '.');
  }
 
 function calcular_area($lado){
@@ -19,6 +19,7 @@ $unidad = "cm";
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $lado = $_POST['lado'];
     $area = format_float_two(calcular_area($lado));
+    $lado = format_float_two($lado);
 }
 
 ?>
