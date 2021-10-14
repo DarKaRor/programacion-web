@@ -184,7 +184,7 @@ if($_SERVER["REQUEST_METHOD"]==="POST"){
         
     <nav class="activities row center">
         <a href="../index.html">Regresar</a>
-        <a href="https://github.com/DarKaRor/programacion-web/blob/master/web/php/triangulo.php">GitHub</a>
+        <a href="https://github.com/DarKaRor/programacion-web/blob/master/web/php/empleados.php">GitHub</a>
      </nav>
 </body>
 </html>
