@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         <h2>Johandry López - 29714201</h2>
     </header>
     <div class="data">
-        <form action="octágono.php" method="post">
+        <form action="" method="post" class="octagon">
             <p>Ingrese el valor del lado</p>
             <input type="number" required name="lado" id="lado" min="1" value="<?php echo $lado ?>"/>
             <input type="submit" name="submit" value="Aceptar"/>
