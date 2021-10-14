@@ -86,7 +86,7 @@ function form_component($i){
             </div>
             <div class='chained'>
                 <label for='Sueldo{$i}'> Sueldo</label>
-                <input type=number min=1 id='Sueldo{$i}' required name={$empleado}[$sKey]/>
+                <input type=number min=1 id='Sueldo{$i}' step='any' required name={$empleado}[$sKey]/>
             </div>
         </div>
         <label for='Departamento{$i}'> Departamento</label>";

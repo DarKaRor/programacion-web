@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     <div class="data">
         <form action="" method="post" class="octagon">
             <p>Ingrese el valor del lado</p>
-            <input type="number" required name="lado" id="lado" min="1" value="<?php echo $lado ?>"/>
+            <input type="number" required name="lado" id="lado" min="1" step="any" value="<?php echo $lado ?>"/>
             <input type="submit" name="submit" value="Aceptar"/>
         </form>
         <p>Valor de los lados: <?php echo $lado." ".$unidad?></p>
