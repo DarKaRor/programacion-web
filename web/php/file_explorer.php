@@ -141,9 +141,9 @@ if($_SERVER['REQUEST_METHOD']==='GET'){
     if(isset($_GET['txtfile']) && isset($_GET['dir'])){
         $text_file = $_GET['txtfile'];
         $directory = $_GET['dir'];
-        $full_path = $directory."\\".$text_file;
+        $full_path = $directory."/".$text_file;
         $full_path = space_to_link($full_path,TRUE);
-     
+        print($full_path);
         # Si el archivo existe, entonces se modificaran los valores de $texto y $nombre, que se ven dentro de los inputs del creador de archivos de texto.
         if(file_exists($full_path)){
             $archivo = $text_file;
