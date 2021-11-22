@@ -33,6 +33,16 @@ function set_sueldo($sueldo){
     return format_float_two($sueldo); 
 }
 
+function allSet($words){
+
+}
+
+$something = [];
+$something[0] = [
+    'nombre' => "hola"
+];
+print_r($something);
+
 # Departamentos
 $departamentos = [
 "Planeación financiera",
@@ -95,7 +105,6 @@ function form_component($i){
         <label for='Lugar{$i}'> Lugar de trabajo</label>
         <input type=text required id='Lugar{$i}' name={$empleado}[$lKey]/>
         </div>";
-        
     return $component;
 }
 
@@ -108,7 +117,7 @@ function drop_down_component($items,$name,$index){
 }
 
 if($_SERVER["REQUEST_METHOD"]==="POST"){
-    //print_r($_POST['empleados']);
+    #print_r($_POST['empleados']);
     $holder_empleados = $_POST['empleados'];
     global $error,$errorMessage,$posted;
     $cedulas = [];
@@ -137,9 +146,8 @@ if($_SERVER["REQUEST_METHOD"]==="POST"){
     }
 
 }
-
-
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
