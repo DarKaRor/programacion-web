@@ -143,7 +143,6 @@ if($_SERVER['REQUEST_METHOD']==='GET'){
         $directory = $_GET['dir'];
         $full_path = $directory."/".$text_file;
         $full_path = space_to_link($full_path,TRUE);
-        print($full_path);
         # Si el archivo existe, entonces se modificaran los valores de $texto y $nombre, que se ven dentro de los inputs del creador de archivos de texto.
         if(file_exists($full_path)){
             $archivo = $text_file;
@@ -171,9 +170,7 @@ if($_SERVER["REQUEST_METHOD"]==="POST"){
         $fp = fopen($archivo,'w');
         fwrite($fp,$text);
         fclose($fp);
-
     }
-
 
     # Si se escribió un nuevo directorio en el input, se usará ese.
     if(isset($_POST['directory'])){
@@ -192,9 +189,6 @@ if($_SERVER["REQUEST_METHOD"]==="POST"){
     
 
 }
-
-
-echo 'Directorio abierto: '.getcwd();
 
 ?>
 
